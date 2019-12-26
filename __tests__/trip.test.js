@@ -11,6 +11,7 @@ describe('trip schema tests', () => {
     const trip = new Trip({
       name: 'Trip to Germany 2020'
     });
+    console.log(trip);
     expect(trip.toJSON()).toEqual({
       _id: expect.any(mongoose.Types.ObjectId),
       name: 'Trip to Germany 2020'
