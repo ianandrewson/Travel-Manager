@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1577396772194" clover="3.2.0">
-  <project timestamp="1577396772194" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="3" coveredelements="3" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+<coverage generated="1577400322986" clover="3.2.0">
+  <project timestamp="1577400322986" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="7" coveredelements="7" complexity="0" loc="7" ncloc="7" packages="1" files="2" classes="2"/>
     <file name="IteneraryItem.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\models\IteneraryItem.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="27" count="1" type="stmt"/>
+    </file>
+    <file name="Trip.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\models\Trip.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
