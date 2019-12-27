@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1577418589206" clover="3.2.0">
+  <project timestamp="1577418589207" name="All files">
+    <metrics statements="77" coveredstatements="62" conditionals="7" coveredconditionals="6" methods="27" coveredmethods="17" elements="111" coveredelements="85" complexity="0" loc="77" ncloc="77" packages="5" files="10" classes="10"/>
+    <package name="lib">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\app.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.middleware">
+      <metrics statements="17" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="2"/>
+      <file name="error.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\middleware\error.js">
+        <metrics statements="8" coveredstatements="7" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="not-found.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\middleware\not-found.js">
+        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="woeid.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\middleware\woeid.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.models">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="IteneraryItem.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\models\IteneraryItem.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+      </file>
+      <file name="Trip.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\models\Trip.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.routes">
+      <metrics statements="24" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="12"/>
+      <file name="itenerary.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\routes\itenerary.js">
+        <metrics statements="10" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="trip.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\routes\trip.js">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib.utils">
+      <metrics statements="21" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="8" coveredmethods="3"/>
+      <file name="connect.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\utils\connect.js">
+        <metrics statements="12" coveredstatements="11" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+      <file name="weather.js" path="C:\Users\user\alchemy\bootcamp-three\week-three\labs\Travel-Manager\lib\utils\weather.js">
+        <metrics statements="9" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
