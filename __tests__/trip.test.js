@@ -1,7 +1,8 @@
+require('dotenv').config();
+const request = require('supertest');
 const mongoose = require('mongoose');
 const Trip = require('../lib/models/Trip.js');
 const connect = require('../lib/utils/connect.js');
-const request = require('supertest');
 const app = require('../lib/app.js');
 
 describe('trip route tests', () => {
@@ -12,7 +13,7 @@ describe('trip route tests', () => {
     return mongoose.connection.dropDatabase();
   });
   afterAll(() => {
-    mongoose.connection.close();
+    return mongoose.connection.close();
   });
 
   it('should post a new Trip', () => {
@@ -23,7 +24,7 @@ describe('trip route tests', () => {
       })
       .then(res => {
         expect(res.body).toEqual({
-          _id: expect.any(mongoose.Types.ObjectId),
+          _id: expect.any(String),
           name: 'Trip to Germany 2020',
           __v: 0
         });
@@ -42,8 +43,9 @@ describe('trip route tests', () => {
       .then(res => {
         trips.forEach(trip => {
           expect(res.body).toContainEqual({
-            _id: trip._id.soString(),
-            name: trip.name
+            _id: trip._id.toString(),
+            name: trip.name,
+            __v: 0
           });
         });
       });
@@ -55,9 +57,8 @@ describe('trip route tests', () => {
       .get(`/api/v1/trips/${trip._id}`)
       .then(res => {
         expect(res.body).toEqual({
-          _id: trip.id,
+          _id: expect.any(String),
           name: 'Trip to Denmark 2020',
-          itenerary: [],
           __v: 0
         });
       });
@@ -66,7 +67,7 @@ describe('trip route tests', () => {
   it('should be able to update a trip by id', async() => {
     const trip = await Trip.create({ name: 'Trip to China 2011' });
     return request(app)
-      .patch(`/api/v1/trips/${trip.id}`)
+      .patch(`/api/v1/trips/${trip._id}`)
       .send({ name: 'Trip to China 2021' })
       .then(res => {
         expect(res.body.name).toEqual('Trip to China 2021');
@@ -79,9 +80,8 @@ describe('trip route tests', () => {
       .delete(`/api/v1/trips/${trip._id}`)
       .then(res => {
         expect(res.body).toEqual({
-          _id: trip.id,
+          _id: expect.any(String),
           name: 'Trip to Mexico 2018',
-          itenerary: [],
           __v: 0
         });
       });
